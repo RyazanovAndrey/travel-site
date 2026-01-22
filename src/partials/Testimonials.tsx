@@ -40,7 +40,7 @@ const Testimonials = () => {
                         <span className='card-testi-2'>{item.org}</span>
                       </div>
                       <div className="flex">
-                        {item.stars.map(item => {
+                        {item.stars.map(_ => {
                           return <Star color='orange' />
                         })}
                       </div>

@@ -9,3 +9,7 @@ export type TAboutProps = {
 export type TPopularProps = {
   img: string, price: string, location: string, days: string, stars: string, title: string
 }
+
+export type TestList = {
+    img: string, title: string, desc:string, org: string, stars: number[]
+}

@@ -1,4 +1,4 @@
-import type { TLinks } from "../types/type";
+import type { TestList, TLinks } from "../types/type";
 
 export const navLinks: TLinks[] = [
     { href: '#destination', title: 'Destination' },
@@ -42,7 +42,7 @@ export const popularList = [
     { img: 'p2.jpg', price: '62.2', title: 'Asian descovery', location: 'Agoda, surulere lagos', days: '4', stars: '0.2' },
 ]
 
-export const testiList = [
+export const testiList: TestList[] = [
     { img: 't.webp', title: 'Joseph Galt', desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, at? lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, at?', org: 'Fementum Co', stars: [1, 1, 1, 1, 1] },
     { img: 't.webp', title: 'Joseph Galt', desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, at?', org: 'Fementum Co', stars: [1, 1, 1, 1, 1] },
     { img: 't.webp', title: 'Joseph Galt', desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, at?', org: 'Fementum Co', stars: [1, 1, 1, 1, 1] },
