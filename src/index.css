@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-main: "Poppins", sans-serif;
+    --font-desc: "Yellowtail", cursive;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-2xl: 1400px;
+    --color-main: #070e21;
+    --color-desc: #ff5241;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+}
+
+@layer utilities {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding-inline: 10px;
+
+        @media (width >=36rem
+
+            /* 576px */
+        ) {
+            max-width: 33.75rem
+                /* 540px */
+            ;
+        }
+
+        @media (width >=48rem
+
+            /* 768px */
+        ) {
+            max-width: 45rem
+                /* 720px */
+            ;
+        }
+
+        @media (width >=62rem
+
+            /* 992px */
+        ) {
+            max-width: 60rem
+                /* 960px */
+            ;
+        }
+
+        @media (width >=75rem
+
+            /* 1200px */
+        ) {
+            max-width: 71.25rem
+                /* 1140px */
+            ;
+        }
+
+        @media (width >=87.5rem
+
+            /* 1400px */
+        ) {
+            max-width: 82.5rem
+                /* 1320px */
+            ;
+        }
+    }
+}
+
+.hero {
+    background-image: url('../public/bg1.png');
+    min-height: 800px;
+    background-position: center;
+    background-size: cover;
+    animation: goSlide 25s infinite;
+}
+
+@keyframes goSlide {
+    0% {
+        background-image: url('../public/bg2.png');
+    }
+
+    25% {
+        background-image: url('../public/bg3.png');
+    }
+
+    50% {
+        background-image: url('../public/bg4.png');
+    }
+
+    75% {
+        background-image: url('../public/bg5.png');
+    }
+}
+
+.fill-btn {
+    background-color: var(--color-desc);
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    color: white;
+}
+
+.border-btn {
+    border: 1px solid var(--color-desc);
+    padding: 15px 40px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.card-testi-1 {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-testi-2 {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 14px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.destination-slider.swiper {
+    overflow: hidden;
+}
+
+.destination-slider .swiper-wrapper {
+    display: inline-flex;
+}
