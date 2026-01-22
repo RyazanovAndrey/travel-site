@@ -145,3 +145,11 @@ body {
 .destination-slider .swiper-wrapper {
     display: inline-flex;
 }
+
+.testimonials-slider.swiper {
+    overflow: hidden;
+}
+
+.testimonials-slider .swiper-wrapper {
+    display: inline-flex;
+}

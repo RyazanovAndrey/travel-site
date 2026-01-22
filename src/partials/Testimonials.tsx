@@ -29,6 +29,7 @@ const Testimonials = () => {
               slidesPerView={1}
               spaceBetween={40}
               loop
+              className='testimonials-slider'
             >
               {testiList.map(item => (
                 <SwiperSlide>

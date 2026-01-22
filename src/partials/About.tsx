@@ -23,7 +23,7 @@ const About = () => {
             </motion.button>
           </div>
           <div className="">
-            <motion.img variants={fadeInOpacity} src="/public/about.png" alt="" />
+            <motion.img variants={fadeInOpacity} src="about.png" alt="" />
           </div>
           <div className="space-y-10">
 

@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header className={`fixed w-full py-3 z-90 text-white transition-all duration-500 ${isOpen && 'bg-main'} ${isActive ? 'bg-main' : ''}`}>
       <div className="container flex justify-between items-center">
-        <a href="#"><img src="/public/logo.png" alt="" onClick={() => setIsOpen(false)} /></a>
+        <a href="#"><img src="logo.png" alt="" onClick={() => setIsOpen(false)} /></a>
         <div className="justify-between gap-10 hidden md:flex">
           {navLinks.map(item => {
             return <a href={item.href}>{item.title}</a>
